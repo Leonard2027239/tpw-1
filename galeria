@@ -1,0 +1,45 @@
+<main>
+    <h2>Nuestro Portafolio de Trabajos</h2>
+    <p>Esta sección permite que las clientas conozcan la calidad de nuestros acabados antes de reservar su cita.</p>
+
+    <section>
+        <h3>Diseños Elegantes y Francesas</h3>
+        <div class="galeria-grid">
+            <div>
+                <img src="https://media.glamour.mx/photos/67c8b7a9b9983cf0434fb213/master/w_1600%2Cc_limit/disen%25CC%2583os-de-un%25CC%2583as-para-el-dia-de-la-mujer-ombre.jpg" alt="Manicure Francesa Clásica" width="300">
+                <p>Manicure Francesa Clásica</p>
+            </div>
+            <div>
+                <img src="https://s.alicdn.com/@sc04/kf/Hb2e73d70328f49dab9abd5b781987a0a3/New-Arrival-Wholesale-Artificial-Full-Cover-Press-On-Gel-Nail-Tips-Custom-Logo-Design-New-Style-Model-for-Finger-Application.jpg_300x300.jpg" alt="Diseños Minimalistas de Temporada" width="300">
+                <p>Diseños Minimalistas de Temporada</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/e7/4e/8f/e74e8fbf190522add713406148a4bf2c.jpg" alt="Uñas tono Nude elegante" width="300">
+                <p>Uñas tono Nude elegante</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Uñas Acrílicas y Diseños Personalizados</h3>
+        <div class="galeria-grid">
+            <div>
+                <img src="https://media.istockphoto.com/id/1461739328/es/foto/primer-plano-de-una-manicura-marr%C3%B3n-en-u%C3%B1as-largas-y-afiladas-sobre-un-fondo-de-flores-con-un.jpg?s=612x612&w=0&k=20&c=qXXHT1dzW5LpRltwRa5PqSpzDr-rmuFXO3H38Bsms28=" alt="Uñas Acrílicas con Cristales" width="300">
+                <p>Uñas Acrílicas con Cristales</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/236x/7f/5b/9a/7f5b9abf3f486b137a291bc03db788e3.jpg" alt="Nail Art Complejo a Mano Alzada" width="300">
+                <p>Nail Art Complejo a Mano Alzada</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Video del Proceso</h3>
+        <div class="video-container">
+            <!-- Para integrar un YouTube Short o Video se usa <iframe> con formato /embed/ -->
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/OA_sO1k03q0" title="Proceso de aplicación y decorado paso a paso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Proceso de aplicación y decorado paso a paso</p>
+        </div>
+    </section>
+</main>
