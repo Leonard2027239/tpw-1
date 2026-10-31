@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finas Nails</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #f5f0e8;
+            color: #2f2518;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        main {
+            width: min(680px, calc(100% - 40px));
+            padding: 32px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 8px 24px rgba(47, 37, 24, 0.12);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font: bold 16px Arial, sans-serif;
+        }
+
+        input {
+            width: min(320px, 100%);
+            box-sizing: border-box;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border: 1px solid #b8a58d;
+            border-radius: 6px;
+            font: 16px Arial, sans-serif;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: 0;
+            border-radius: 6px;
+            background: #8b5e34;
+            color: white;
+            font: bold 16px Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #654321;
+        }
+
+        #saludo {
+            min-height: 24px;
+            color: #654321;
+            font: bold 18px Arial, sans-serif;
+        }
+
+        #texto-quijote {
+            margin-top: 24px;
+            padding: 20px;
+            border-left: 4px solid #d5b68a;
+            background: #fffaf2;
+            color: #2f2518;
+            line-height: 1.7;
+            text-align: left;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        #texto-quijote:hover {
+            background-color: #f0e7d5;
+            color: #a33a1f;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bienvenidos a salón de manicure "Finas Nails"</h1>
+
+        <!--
+        Evento seleccionado: submit (formularios).
+        Implementación: al enviar el formulario se evita la recarga, se obtiene
+        el nombre escrito por la cliente y se muestra un mensaje personalizado.
+        -->
+        <form id="formulario-saludo">
+            <label for="nombre">Escribe tu nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+            <button type="submit">Mostrar saludo</button>
+        </form>
+
+        <p id="saludo" role="status" aria-live="polite"></p>
+
+        <p id="texto-quijote">
+            “En un lugar de la Mancha, de cuyo nombre no quiero acordarme,
+            no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero,
+            adarga antigua, rocín flaco y galgo corredor.”
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
