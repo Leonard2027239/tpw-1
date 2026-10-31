@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background: #f1f5f9;
+            color: #1e293b;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            width: min(100%, 420px);
+            padding: 28px;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 10px 30px #0f172a1a;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #0f766e;
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 6px;
+            font-weight: 700;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+        }
+
+        button {
+            margin-top: 22px;
+            border: 0;
+            background: #0f766e;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #115e59;
+        }
+
+        #resultado {
+            min-height: 1.5em;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        .nota {
+            margin-bottom: 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <p>Ingresa tu peso y estatura para calcular tu índice de masa corporal.</p>
+
+        <form id="formulario-imc">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+
+            <label for="peso">Peso (kg)</label>
+            <input id="peso" name="peso" type="number" min="1" step="any" required>
+
+            <label for="estatura">Estatura (m)</label>
+            <input id="estatura" name="estatura" type="number" min="0.5" max="2.5" step="any" required>
+
+            <button type="submit">Calcular IMC</button>
+        </form>
+
+        <p id="resultado" role="status" aria-live="polite"></p>
+        <p class="nota">La clasificación es orientativa para adultos y no sustituye una valoración profesional.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
