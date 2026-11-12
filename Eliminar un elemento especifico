@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar una imagen</title>
+</head>
+<body>
+    <div id="contenedor-imagenes">
+        <img id="imagen-1" src="https://placehold.co/180x120?text=Imagen+1" alt="Imagen 1">
+        <img id="imagen-2" src="https://placehold.co/180x120?text=Imagen+2" alt="Imagen 2">
+        <img id="imagen-3" src="https://placehold.co/180x120?text=Imagen+3" alt="Imagen 3">
+    </div>
+    <button id="eliminar-imagen" type="button">Eliminar la segunda imagen</button>
+
+    <script>
+        const contenedor = document.getElementById("contenedor-imagenes");
+        const segundaImagen = document.getElementById("imagen-2");
+        const botonEliminar = document.getElementById("eliminar-imagen");
+
+        botonEliminar.addEventListener("click", () => {
+            contenedor.removeChild(segundaImagen);
+            botonEliminar.disabled = true;
+        });
+    </script>
+</body>
+</html>
