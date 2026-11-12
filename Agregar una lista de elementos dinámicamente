@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista dinámica</title>
+</head>
+<body>
+    <script>
+        const cantidad = Number.parseInt(prompt('¿Cuántos elementos desea agregar?'), 10);
+        const lista = document.createElement('ul');
+
+        for (let i = 1; i <= cantidad; i++) {
+            const elemento = document.createElement('li');
+            elemento.textContent = `Elemento ${i}`;
+            lista.appendChild(elemento);
+        }
+
+        document.body.appendChild(lista);
+    </script>
+</body>
+</html>
